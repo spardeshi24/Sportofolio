@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    background:#F8F9FA;
+    color:#212529;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    background:#1F2937;
+    color:#F8F9FA;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav a{
+    color:#F8F9FA;
+    text-decoration:none;
+}
+
+/* ===== HEADER ===== */
+header{
+    text-align:center;
+    padding:80px 20px;
+    background:#2F2F2F;
+    color:#F8F9FA;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.buttons{
+    margin-top:25px;
+}
+
+.buttons a{
+    text-decoration:none;
+    background:#F8F9FA;
+    color:#1F2937;
+    padding:12px 25px;
+    border-radius:25px;
+    margin:10px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.buttons a:hover{
+    background:#E5E7EB;
+}
+
+/* ===== SECTIONS ===== */
+section{
+    max-width:1000px;
+    margin:30px auto;
+    background:#FFFFFF;
+    color:#212529;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+section:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+h2{
+    color:#2F2F2F;
+    margin-bottom:20px;
+}
+
+/* ===== SKILLS ===== */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.card{
+    background:#E5E7EB;
+    color:#1F2937;
+    padding:12px 20px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+/* ===== PROJECTS ===== */
+.project-card{
+    background:#F3F4F6;
+    padding:20px;
+    margin-top:15px;
+    border-left:5px solid #2F2F2F;
+    border-radius:10px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    background:#1F2937;
+    color:#F8F9FA;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        margin-top:10px;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+}
